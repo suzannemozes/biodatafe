@@ -1,15 +1,30 @@
-import React from 'react'
+// mockup from budget app
+import JournalDate from './JournalDate';
 
-
-function CreateFact() {
+function CreateFact(props) { //props is one parameter is an object that in this case holds all of the values we get from the attributes on our custom element with key: value name 
   return (
     <div>
-      <h2>Create Fact!</h2>
+      <div>{props.title}</div>
+      <div>
+        <h2>{props.people}</h2>
+        <div>
+          <JournalDate date={props.date} />
+          </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default CreateFact;
+
+// const factSchema = new mongoose.Schema({
+//   title: String,
+//   people: [],
+//   place: String,
+//   year: Number,
+//   month: Number,
+//   day: Number,
+// });
 
 // import { useNavigate } from "react-router-dom"
 
