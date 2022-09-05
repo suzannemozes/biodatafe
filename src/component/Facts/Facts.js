@@ -1,5 +1,6 @@
 import React from "react";
 import CreateFact from "./CreateFact";
+import './Facts.css'
 
 function Facts(props) {
   return (

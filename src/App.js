@@ -41,6 +41,7 @@ function App() {
     <div className="App">
       <h2>Let's do this</h2>
       <Facts items={facts}/>
+    
     </div>
   );
 }

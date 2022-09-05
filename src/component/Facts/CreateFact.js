@@ -1,5 +1,5 @@
 // mockup from budget app
-import JournalDate from './JournalDate';
+
 
 function CreateFact(props) { //props is one parameter is an object that in this case holds all of the values we get from the attributes on our custom element with key: value name 
   return (
@@ -8,7 +8,7 @@ function CreateFact(props) { //props is one parameter is an object that in this 
       <div>
         <h2>{props.people}</h2>
         <div>
-          <JournalDate date={props.date} />
+          {/* <JournalDate date={props.date} /> */}
           </div>
       </div>
     </div>
