@@ -4,15 +4,15 @@ import "./FactForm.css";
 
 const FactForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
-  const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredDescription, setEnteredDescription] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
   };
 
-  const amountChangeHandler = (event) => {
-    setEnteredAmount(event.target.value);
+  const descriptionChangeHandler = (event) => {
+    setEnteredDescription(event.target.value);
   };
 
   const dateChangeHandler = (event) => {
@@ -24,13 +24,13 @@ const FactForm = (props) => {
 
   const factData = {
     title: enteredTitle,
-    amount: enteredAmount,
+    description: enteredDescription,
     date: new Date(enteredDate),
     };
     
     props.onSaveFactData(factData);
     setEnteredTitle('');
-    setEnteredAmount('');
+    setEnteredDescription('');
     setEnteredDate('');
   };
 
@@ -46,21 +46,19 @@ const FactForm = (props) => {
           />
         </div>
         <div className="new-fact__control">
-          <label>Amount</label>
+          <label>Description</label>
           <input
-            type="number"
-            min="0.01"
-            step="0.01"
-            value={enteredAmount}
-            onChange={amountChangeHandler}
+            type="text"
+            value={enteredDescription}
+            onChange={descriptionChangeHandler}
           />
         </div>
         <div className="new-fact__control">
           <label>Date</label>
           <input
             type="date"
-            min="1700-01-01"
-            max="1950-12-31"
+            min="1820-01-01"
+            max="1899-12-31"
             value={enteredDate}
             onChange={dateChangeHandler}
           />

@@ -27,7 +27,7 @@ const Facts = (props) => {
           <FactItem
             key={fact.id}
             title={fact.title}
-            amount={fact.amount}
+            description={fact.description}
             date={fact.date}
           />
         ))}

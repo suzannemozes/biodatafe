@@ -8,10 +8,10 @@ const FactItem = (props) => {
   return (
     <Card className='fact-item'>
       <FactDate date={props.date} />
-      <div className='fact-item__description'>
+      <div className='fact-item__title'></div>
         <h2>{props.title}</h2>
-        <div className='fact-item__price'>${props.amount}</div>
-      </div>
+        <div className='fact-item__amtdesc'>{props.description}</div>
+      
     </Card>
   );
 }
