@@ -12,10 +12,10 @@ const FactsFilter = (props) => {
       <div className='facts-filter__control'>
         <label>Filter by year</label>
         <select value={props.selected} onChange={dropdownChangeHandler}>
-          <option value='2022'>2022</option>
-          <option value='2021'>2021</option>
-          <option value='2020'>2020</option>
-          <option value='2019'>2019</option>
+          <option value='1898'>1898</option>
+          <option value='1899'>1899</option>
+          <option value='1900'>1900</option>
+          <option value='1901'>1901</option>
         </select>
       </div>
     </div>

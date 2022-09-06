@@ -1,5 +1,5 @@
 .new-fact {
-  background-color: #d0faa9;
+  background-color: #e2c395;
   padding: 1rem;
   margin: 2rem auto;
   width: 50rem;
@@ -14,15 +14,15 @@
   cursor: pointer;
   padding: 1rem 2rem;
   border: 1px solid #3F9565;
-  background-color: ##3F9565;
-  color: white;
+  background-color: #3F9565;
+  color: whitesmoke;
   border-radius: 12px;
   margin-right: 1rem;
 }
 
 .new-fact button:hover,
 .new-fact button:active {
-  background-color: #88A36E;
+  background-color: #F64348;
   border-color: #88A36E;
 }
 .new-fact button.alternative {
