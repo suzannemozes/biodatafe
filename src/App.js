@@ -1,47 +1,43 @@
-import React from "react";
-import Facts from './component/Facts/Facts'
+import React, { useState } from 'react';
+
+import NewFact from './components/NewFact/NewFact';
+import Facts from "./components/Facts/Facts";
+
+const DUMMY_FACTS = [
+  {
+    id: 'e1',
+    title: 'Toilet Paper',
+    amount: 94.12,
+    date: new Date(2020, 7, 14),
+  },
+  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+  {
+    id: 'e3',
+    title: 'Car Insurance',
+    amount: 294.67,
+    date: new Date(2021, 2, 28),
+  },
+  {
+    id: 'e4',
+    title: 'New Desk (Wooden)',
+    amount: 450,
+    date: new Date(2021, 5, 12),
+  },
+];
 
 function App() {
-  const facts = [
-    {
-      title: "dgr date of birth",
-      people: ["DGR, LGR"],
-      place: "unknown",
-      year: 1828,
-      month: 12,
-      day: 12,
-    },
-    {
-      title: "dgr date of birth",
-      people: ["DGR, LGR"],
-      place: "unknown",
-      year: 1828,
-      month: 12,
-      day: 12
-    },
-    {
-      title: "dgr date of birth",
-      people: ["DGR, LGR"],
-      place: "unknown",
-      year: 1828,
-      month: 12,
-      day: 12
-    },
-    {
-      title: "dgr date of birth",
-      people: ["DGR, LGR"],
-      place: "unknown",
-      year: 1828,
-      month: 12,
-      day: 12
-    },
-  ];
+  const [facts, setFacts] = useState(DUMMY_FACTS);
+
+  const addFactHandler = (fact) => {
+    setFacts((prevFacts) => {
+      return [fact, ...prevFacts];
+    });
+  };
 
   return (
-    <div className="App">
-      <h2>Let's do this</h2>
-      <Facts items={facts}/>
-    
+    <div>
+      <NewFact onAddFact={addFactHandler} />
+      <Facts items={facts} />
     </div>
   );
 }

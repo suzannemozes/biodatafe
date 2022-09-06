@@ -1,0 +1,37 @@
+.new-fact {
+  background-color: #d0faa9;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-fact button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #3F9565;
+  background-color: ##3F9565;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.new-fact button:hover,
+.new-fact button:active {
+  background-color: #88A36E;
+  border-color: #88A36E;
+}
+.new-fact button.alternative {
+  color: #282f21;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.new-fact button.alternative:hover,
+.new-fact button.alternative:active {
+  background-color: #b8d89a;
+}
