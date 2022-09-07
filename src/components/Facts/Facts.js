@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// import { getFacts } from '../services/facts-api'
 
-import FactItem from "./FactItem";
 import Card from "../UI/Card";
 import FactsFilter from "./FactsFilter";
+import FactsList from "./FactsList"
 import "./Facts.css";
 
 const Facts = (props) => {
@@ -23,18 +24,7 @@ const Facts = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
-        {filteredFacts.length === 0 ? (
-          <p>No facts found.</p>
-        ) : (
-          filteredFacts.map((fact) => (
-            <FactItem
-              key={fact.id}
-              title={fact.title}
-              description={fact.description}
-              date={fact.date}
-            />
-          ))
-        )}
+        <FactsList items={filteredFacts} />
       </Card>
     </div>
   );

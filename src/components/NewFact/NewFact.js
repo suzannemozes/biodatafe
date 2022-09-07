@@ -1,20 +1,37 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import FactForm from './FactForm';
 import './NewFact.css';
 
 const NewFact = (props) => {
+  const [isEditing, setIsEditing] = useState(false);
+
   const saveFactDataHandler = (enteredFactData) => {
     const factData = {
       ...enteredFactData,
       id: Math.random().toString()
     };
     props.onAddFact(factData);
+    setIsEditing(false);
+  };
+
+  const startEditingHandler = () => {
+    setIsEditing(true);
+  };
+
+  const stopEditingHandler = () => {
+    setIsEditing(false);
   };
 
   return (
     <div className='new-fact'>
-      <FactForm onSaveFactData={saveFactDataHandler} />
+      {!isEditing && (
+        <button onClick={startEditingHandler}>Add New Fact</button>
+      )}
+      {isEditing && (
+      <FactForm 
+      onSaveExpenseData={saveFactDataHandler}
+      onCancel={stopEditingHandler} />)}
     </div>
   );
 };

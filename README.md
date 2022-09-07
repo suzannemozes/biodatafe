@@ -65,6 +65,39 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+Project #3: The Full Stack MERN App
+Attendance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We will not be having instruction on project days, but we do expect you to be in class to work on your project and most importantly get help from your instructional team. We will not be having Office Hours.
+
+We will still have some instruction and other mandatory items during project week.
+
+Project Details
+ 
+🔴 Mandatory To Pass:
+MVP - Minimum Viable Product
+
+For this project, you will be making another full CRUD app using the technologies outlined below.
+
+    A working full-stack application, built by you, using the MERN stack: Node.js, MongoDB/Mongoose, Express and React.
+    At least one model with full CRUD.
+
+    Include at least one of the following features:
+
+        Pull from a third party API - either client side with AJAX or server-side with an NPM
+            NPMs that work with an API: Twitter, Yelp, etc. Remember the axiosmodule can make API calls server side to any URL.
+
+        Have two models
+
+            Have two separate models that don't have to be related
+     
+        Use a CSS framework like Skeleton or Bootstrap
+    Be deployed online and accessible to the public via Heroku
+    Use React Router
+
+    A README.mdfile with explanations of the technologies used, the approach taken, unsolved problems, user stories, and notes to yourself so you can come back to your project later in the course and be able to pick up your train of thought, etc
+        Have a link to your hosted working app in the README.mdfile in your github repo
+
+Submission:
+
+You will sumbit the link to your front end repo. It SHOULD contain links to your back end repo, and both deployed apps.

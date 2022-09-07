@@ -24,7 +24,7 @@ const FactForm = (props) => {
 
   const factData = {
     title: enteredTitle,
-    description: enteredDescription,
+    description: +enteredDescription,
     date: new Date(enteredDate),
     };
     
@@ -66,6 +66,7 @@ const FactForm = (props) => {
       </div>
       <div className="new-fact__actions">
         <button type="submit">Add fact</button>
+        <button type="button" onClick={props.onCancel}>Cancel</button>
       </div>
     </form>
   );
