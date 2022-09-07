@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import MainHeader from "./components/MainHeader";
+import Welcome from "./pages/Welcome";
 import NewFact from './components/NewFact/NewFact';
 import Facts from "./components/Facts/Facts";
+import FactsPage from "./pages/FactsPage";
+import FactDetail from "./pages/FactDetail";
+
 
 const DUMMY_FACTS = [
   {
@@ -39,6 +46,20 @@ function App() {
 
   return (
     <div>
+      <h1>Welcome to Biodata</h1>
+      <MainHeader />
+      <main>
+        <Router>
+          <Routes>
+            <Route path="/welcome" element={<Welcome />} />
+            <Route
+              path="/facts/fact-detail/:factId"
+              element={<FactDetail />}
+            />
+            <Route path="/factspage" element={<FactsPage />} exact />
+          </Routes>
+        </Router>
+      </main>
       <NewFact onAddFact={addFactHandler} />
       <Facts items={facts} />
     </div>

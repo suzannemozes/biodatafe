@@ -95,7 +95,7 @@ const FactsFilter = (props) => {
           <option value="1879">1879</option>
           <option value="1880">1880</option>
           <option value="1881">1881</option>
-          <option value="1882">1894</option>
+          <option value="1882">1882</option>
           <option value="1883">1883</option>
           <option value="1884">1884</option>
           <option value="1885">1885</option>

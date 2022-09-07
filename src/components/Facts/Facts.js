@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 // import { getFacts } from '../services/facts-api'
 
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 import FactsFilter from "./FactsFilter";
 import FactsList from "./FactsList"
 import "./Facts.css";
 
 const Facts = (props) => {
-  const [filteredYear, setFilteredYear] = useState("2022");
+  const [filteredYear, setFilteredYear] = useState("1882");
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);

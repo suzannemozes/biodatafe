@@ -5,7 +5,7 @@ import './FactsList.css'
 
 const FactsList = props => {
   if (props.items.length === 0) {
-    return <h2 className="facts-list__fallback">Found no expenses.</h2>
+    return <h2 className="facts-list__fallback">No Facts Found for Selected Year </h2>
   }
 
   return (

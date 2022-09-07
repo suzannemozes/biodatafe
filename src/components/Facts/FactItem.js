@@ -1,7 +1,7 @@
 import React from "react";
 
 import FactDate from "./FactDate";
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 import "./FactItem.css";
 
 const FactItem = (props) => {

@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import FactDate from './FactDate'
 
 
-function Todo() {
+function Fact() {
     const nav = useNavigate()
     const { id } = useParams()
     const [fact, setFact] = useState({})
@@ -29,4 +29,4 @@ function Todo() {
     )
 }
 
-export default FactDate;
+export default Fact;
