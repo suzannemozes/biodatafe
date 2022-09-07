@@ -11,7 +11,7 @@ const NewFact = (props) => {
       ...enteredFactData,
       id: Math.random().toString()
     };
-    props.onAddFact(factData);
+    props.onAddFact(factData);//lifting state up to App.js
     setIsEditing(false);
   };
 

@@ -24,7 +24,7 @@ const FactForm = (props) => {
 
   const factData = {
     title: enteredTitle,
-    description: +enteredDescription,
+    description: enteredDescription,
     date: new Date(enteredDate),
     };
     
