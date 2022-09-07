@@ -30,7 +30,7 @@ const NewFact = (props) => {
       )}
       {isEditing && (
       <FactForm 
-      onSaveExpenseData={saveFactDataHandler}
+      onSaveFactData={saveFactDataHandler}
       onCancel={stopEditingHandler} />)}
     </div>
   );
