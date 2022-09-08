@@ -5,12 +5,12 @@
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'helvetica', sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #e0e9f5;
+  background-color: whitesmoke;
 }
 
 main {
@@ -18,9 +18,19 @@ main {
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-display: block;
+}
+
+h3 {
+  text-align: center
+}
+
 h1,
 h2,
 h3,
 p {
-  color: #042b5f;
+  color: black;
 }

@@ -1,0 +1,28 @@
+{
+  "factData": [
+    {
+      "title": "Dante Gabriel Rossetti Date of Birth",
+      "description": "Born in London to Gabriele Rossetti and Frances Polidori",
+      "year": "1828",
+      "month": "05",
+      "day": "12"
+    },
+  
+    {
+      "title": "Dante Gabriel Rossetti Date of Death",
+      "description": "Birchington-on-Sea",
+      "year": "1882",
+      "month": "04",
+      "day": "09"
+    },
+  
+    {
+      "title": "Gabriele Pasquale Giuseppe Rossetti Date of Death",
+      "description": "Died in London, buried in Highgate",
+      "year": "1854",
+      "month": "04",
+      "day": "24"
+    }
+  ]
+
+} 

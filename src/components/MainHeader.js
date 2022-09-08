@@ -1,4 +1,4 @@
-import classes from './MainHeader.module.css'
+import classes from "./MainHeader.module.css";
 
 const MainHeader = () => {
   return (
@@ -6,11 +6,14 @@ const MainHeader = () => {
       <nav>
         <ul>
           <li>
-            <a href='/welcome'>Welcome</a>
-            </li>
-            <li>
-            <a href='/factspage'>Facts</a>
-            </li>
+            <a href="/home">HOME</a>
+          </li>
+          <li>
+            <a href="facts">FACTS</a>
+          </li>
+          <li>
+            <a href="/characters">CHARACTERS</a>
+          </li>
         </ul>
       </nav>
     </header>
